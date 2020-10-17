@@ -1,116 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Title</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-</head>
-<body>
+	</head>
+	<body>
 
+		<div class="img" style="position: relative; width: 550px; height: 550px">
 
-<div class="img" style="position: relative; width: 550px; height: 550px">
+		    <img src="nokia.jpg" style="width:100%; height: 100%">
+		  	<div style="position: absolute; left:65%; margin-left: -120px; top: 50%; margin-top: -100px;">
+		      	<div  class="border rounded" style="margin-top: -10px;width:85px; height: 85px;background-color:white;">
+		        	<input id="conteudo"type="text" style="color:black;" />
+		        </div>
+		      </div>
+		    <div style="position: absolute; left: 58%; margin-left: -120px; top: 65%; margin-top: -10px; width:25%; height: 50%;">
+		        <table style="position:absolute;">
 
-    <img src="/images/nokia.jpg" style="width:100%; height: 100%">
-  <div style="position: absolute; left:65%; margin-left: -120px; top: 50%; margin-top: -100px;">
-      <div  class="border rounded" style="margin-top: -10px;width:85px; height: 85px;background-color:white;" id="conteudo"> Conteúdo</div>
-      </div>
-    <div style="position: absolute; left: 58%; margin-left: -120px; top: 65%; margin-top: -10px; width:25%; height: 50%;">
-        <table style="position:absolute;">
+		            <tbody>
+			            <tr>
+			                <td>
+			                    <div class="btn">
 
+			                        <button onclick="fun_1()">1</button>
+			                    </div>
+			                </td>
+			                <td>
+			                    <div class="btn">
+			                        <button onclick="fun_2()">2</button>
+			                    </div>
+			                </td>
+			                <td>
+			                    <div class="btn">
+			                        <button onclick="fun_3()">3</button>
+			                    </div>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <div class="btn">
+			                        <button onclick="fun_4()">4</button>
+			                    </div>
+			                </td>
+			                <td>
+			                    <div class="btn">
+			                        <button onclick="fun_5()">5</button>
+			                    </div>
+			                </td>
+			                <td>
+			                    <div class="btn">
+			                        <button onclick="fun_6()">6</button>
+			                    </div>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <div class="btn">
+			                        <button onclick="fun_7()">7</button>
+			                    </div>
+			                </td>
+			                <td>
+			                    <div class="btn">
+			                        <button onclick="fun_8()">8</button>
+			                    </div>
+			                </td>
+			                <td>
+			                    <div class="btn">
+			                        <button onclick="fun_9()">9</button>
+			                    </div>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <div class="btn">
+			                        <button onclick="fun_t()">*</button>
+			                    </div>
+			                </td>
+			                <td>
+			                    <div class="btn">
+			                        <button onclick="fun_0()">0</button>
+			                    </div>
+			                </td>
+			                <td>
+			                    <div class="btn">
+			                        <button onclick="fun_x()">#</button>
+			                    </div>
+			                </td>
+			            </tr>
+		            </tbody>
+		        </table>
 
-            <tbody>
-            <tr>
+		    </div>
 
-                <td>
-                    <div class="btn">
-                        <button>1</button>
-                    </div>
-                </td>
-                <td>
-                    <div class="btn">
-                        <button>2</button>
-                    </div>
-                </td>
-                <td>
-                    <div class="btn">
-                        <button>3</button>
-                    </div>
-                </td>
+		  <div align="center">
+		    <button class="btn">Enter</button>
+		    <button class="btn">Limpar</button>
+		  </div>
+		</div>
 
+		<script>
+			function fun_1(){
+				document.getElementById('conteudo').innerHTML +="1";
+			}
 
-            </tr>
-            <tr>
+			function fun_2(){
+				document.getElementById('conteudo').innerHTML +="2";
+			}
 
+			function fun_3(){
+				document.getElementById('conteudo').innerHTML +="3";
+			}
 
-                <td>
-                    <div class="btn">
-                        <button>4</button>
-                    </div>
-                </td>
-                <td>
-                    <div class="btn">
-                        <button>5</button>
-                    </div>
-                </td>
-                <td>
-                    <div class="btn">
-                        <button>6</button>
-                    </div>
-                </td>
-            </tr>
-            <tr>
+			function fun_4(){
+				document.getElementById('conteudo').innerHTML +="4";
+			}
 
-                <td>
-                    <div class="btn">
-                        <button>7</button>
-                    </div>
-                </td>
-                <td>
-                    <div class="btn">
-                        <button>8</button>
-                    </div>
-                </td>
-                <td>
-                    <div class="btn">
-                        <button>9</button>
-                    </div>
-                </td>
-            </tr>
-            <tr>
+			function fun_5(){
+				document.getElementById('conteudo').innerHTML +="5";
+			}
 
-                <td>
-                    <div class="btn">
-                        <button>*</button>
-                    </div>
-                </td>
-                <td>
-                    <div class="btn">
-                        <button>0</button>
-                    </div>
-                </td>
-                <td>
-                    <div class="btn">
-                        <button>#</button>
-                    </div>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+			function fun_6(){
+				document.getElementById('conteudo').innerHTML +="6";
+			}
 
-    </div>
+			function fun_7(){
+				document.getElementById('conteudo').innerHTML +="7";
+			}
 
-  <div align="center">
-    <button class="btn">Enter</button>
-    <button class="btn">Limpar</button>
+			function fun_8(){
+				document.getElementById('conteudo').innerHTML +="8";
+			}
 
-  </div>
-</div>
+			function fun_9(){
+				document.getElementById('conteudo').innerHTML +="9";
+			}
 
-
-<script>
-</script>
-</body>
+			function fun_0(){
+				document.getElementById('conteudo').innerHTML +="0";
+			}
+		</script>
+	</body>
 </html>
